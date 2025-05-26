@@ -52,7 +52,7 @@
               "flake.nix" = true;
               ".github/workflows/ci.yml" = true;
               ".vscode" = true;
-              "nix/modules/template.nix" = false;
+              "nix/flake/modules/template.nix" = false;
             };
             packages.default = {
               "bin/qux" = true;
