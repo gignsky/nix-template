@@ -12,22 +12,6 @@
       "original": {
         "owner": "srid",
         "repo": "cargo-doc-live",
-        "rev": "b09d5d258d2498829e03014931fc19aed499b86f",
-        "type": "github"
-      }
-    },
-    "cargo-doc-live_2": {
-      "locked": {
-        "lastModified": 1724704668,
-        "narHash": "sha256-kJFYXlWUodg5WhJ0NuvrP0mCvOT/2AOIo8oGeYLXocs=",
-        "owner": "srid",
-        "repo": "cargo-doc-live",
-        "rev": "b09d5d258d2498829e03014931fc19aed499b86f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "srid",
-        "repo": "cargo-doc-live",
         "type": "github"
       }
     },
@@ -46,21 +30,6 @@
         "owner": "ipetkov",
         "repo": "crane",
         "rev": "0095fd8ea00ae0a9e6014f39c375e40c2fbd3386",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ipetkov",
-        "repo": "crane",
-        "type": "github"
-      }
-    },
-    "crane_2": {
-      "locked": {
-        "lastModified": 1745454774,
-        "narHash": "sha256-oLvmxOnsEKGtwczxp/CwhrfmQUG2ym24OMWowcoRhH8=",
-        "owner": "ipetkov",
-        "repo": "crane",
-        "rev": "efd36682371678e2b6da3f108fdb5c613b3ec598",
         "type": "github"
       },
       "original": {
@@ -463,31 +432,12 @@
         "type": "github"
       }
     },
-    "process-compose-flake_2": {
-      "locked": {
-        "lastModified": 1724606023,
-        "narHash": "sha256-rdGeNa/lCS8E1lXzPqgl+vZUUvnbEZT11Bqkx5jfYug=",
-        "owner": "Platonic-Systems",
-        "repo": "process-compose-flake",
-        "rev": "f6ce9481df9aec739e4e06b67492401a5bb4f0b1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Platonic-Systems",
-        "repo": "process-compose-flake",
-        "rev": "f6ce9481df9aec739e4e06b67492401a5bb4f0b1",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
-        "cargo-doc-live": "cargo-doc-live",
         "dotfiles": "dotfiles",
         "flake-parts": "flake-parts_2",
         "git-hooks": "git-hooks_2",
         "nixpkgs": "nixpkgs_6",
-        "process-compose-flake": "process-compose-flake_2",
-        "rust-flake": "rust-flake_2",
         "systems": "systems_3",
         "treefmt-nix": "treefmt-nix_3"
       }
@@ -516,28 +466,6 @@
         "type": "github"
       }
     },
-    "rust-flake_2": {
-      "inputs": {
-        "crane": "crane_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "rust-overlay": "rust-overlay_2"
-      },
-      "locked": {
-        "lastModified": 1745474556,
-        "narHash": "sha256-ZOK3isVPOsJoAXw7dWnWq31elONt2xF1Q9THLfhKA7w=",
-        "owner": "juspay",
-        "repo": "rust-flake",
-        "rev": "f69408a404f09afe0d85be88eddff07a054c2397",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juspay",
-        "repo": "rust-flake",
-        "type": "github"
-      }
-    },
     "rust-overlay": {
       "flake": false,
       "locked": {
@@ -546,27 +474,6 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "a10c8092d5f82622be79ed4dd12289f72011f850",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "rust-overlay_2": {
-      "inputs": {
-        "nixpkgs": [
-          "rust-flake",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1745462120,
-        "narHash": "sha256-TbVjPOl+Cg5vZ7TIn1KpQ8SOfHKD6OEgu84b6YSCfKE=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "79d3acd1a7e67fb9315fa5c5556eb6adf93dc2da",
         "type": "github"
       },
       "original": {
@@ -641,7 +548,7 @@
     },
     "tarballer": {
       "inputs": {
-        "cargo-doc-live": "cargo-doc-live_2",
+        "cargo-doc-live": "cargo-doc-live",
         "flake-parts": "flake-parts",
         "git-hooks": "git-hooks",
         "nixpkgs": "nixpkgs_5",
