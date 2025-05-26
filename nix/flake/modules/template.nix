@@ -13,7 +13,7 @@
       params = [
         {
           name = "package-name";
-          description = "Name of the Rust package";
+          description = "Name of the Nix Project";
           placeholder = "nix-template";
         }
         {
