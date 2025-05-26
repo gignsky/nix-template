@@ -32,6 +32,6 @@
       imports = with builtins;
         map
           (fn: ./nix/modules/${fn})
-          (attrNames (readDir ./nix/modules));
+          (attrNames (readDir ./nix/flake/modules));
     };
 }
