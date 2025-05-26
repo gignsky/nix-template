@@ -13,7 +13,7 @@ show:
 # Ensure no untracked or uncommitted .nix files are left out
 dont-fuck-my-build:
 	git ls-files --others --exclude-standard -- '*.nix' | xargs -r git add -v | lolcat 2> /dev/null
-	echo "No chance your build is fucked! 👍" | lolcat
+	echo "No chance your build is fucked! 👍" | lolcat 2> /dev/null
 
 # Run the 'omnix' tool with the provided arguments
 om *ARGS:
