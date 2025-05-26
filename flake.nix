@@ -31,7 +31,7 @@
       # See ./nix/modules/*.nix for the modules that are imported here.
       imports = with builtins;
         map
-          (fn: ./nix/modules/${fn})
+          (fn: ./nix/flake/modules/${fn})
           (attrNames (readDir ./nix/flake/modules));
     };
 }
