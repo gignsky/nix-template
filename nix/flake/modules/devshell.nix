@@ -1,11 +1,12 @@
 { inputs, ... }:
 {
   perSystem =
-    { config
-    , self'
-    , pkgs
-    , lib
-    , ...
+    {
+      config,
+      self',
+      pkgs,
+      lib,
+      ...
     }:
     {
       devShells.default = pkgs.mkShell {
