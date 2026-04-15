@@ -21,9 +21,6 @@
     dotfiles = {
       url = "github:gignsky/dotfiles";
       flake = true;
-      inputs = {
-        gigvim.follows = "";
-      };
     };
   };
 
